@@ -21,7 +21,7 @@ public class logouttest extends BaseTest {
 
 
     @Test(dataProvider = "loginValidData", description = "log out from the website")
-    public void loginwithvaliddata(String username,String password) throws InterruptedException {
+    public void logout(String username,String password) throws InterruptedException {
        login(username,password);
        logoutLoc.menubuttonloc(driver).click();
         try {
